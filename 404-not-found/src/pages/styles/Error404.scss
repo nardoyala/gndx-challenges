@@ -1,0 +1,91 @@
+header {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  max-width: 1024px;
+  height: 80px;
+  font-family: 'Inconsolata', Verdana, Geneva, Tahoma, sans-serif;
+  span {
+    font-size: 2.4rem;
+    font-weight: bold;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    color: #333333;
+  }
+}
+.error-page {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 1024px;
+  height: 100%;
+  margin: 40px auto;
+  &__image {
+    width: 100%;
+    min-width: 280px;
+    min-height: 240px;
+    margin: 0 auto;
+    background-image: url('/src/images/Scarecrow.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &__details {
+    margin-top: 50px;
+    h1 {
+      font-size: 4.8rem;
+      line-height: 71px;
+      letter-spacing: -0.035em;
+    }
+    p {
+      margin-top: 30px;
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: #4F4F4F;
+    }
+    button {
+      margin-top: 60px;
+      padding: 20px 40px;
+      border: none;
+      color: white;
+      font-family: 'Space Mono', Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 1.4rem;
+      font-weight: bold;
+      line-height: 21px;
+      letter-spacing: -0.035em;
+      text-transform: uppercase;
+      background-color: #333333;
+    }
+  }
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  max-width: 1024px;
+  height: 50px;
+  span {
+    font-family: 'Montserrat', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 768px) {
+  .error-page {
+    flex-direction: row;
+    &__image {
+      flex: 50%;
+      max-width: 540px;
+    }
+    &__details {
+      flex: 50%;
+      margin-top: 0;
+      margin-left: 50px;
+    }
+  }
+}

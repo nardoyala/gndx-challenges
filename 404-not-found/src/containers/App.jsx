@@ -1,5 +1,6 @@
 import React from 'react';
+import Error404 from '../pages/Error404';
 
-const App = () => <h1>Hello React!</h1>;
+const App = () => <Error404 />;
 
 export default App;
